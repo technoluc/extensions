@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
       id: "kvkSearch",
-      title: "Search on KVK for '%s'",
+      title: "Search for '%s' on KVK",
       contexts: ["selection"]
     });
   });
