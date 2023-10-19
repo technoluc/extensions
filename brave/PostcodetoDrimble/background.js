@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "customLink",
-    title: "Postcode to Drimble",
+    title: "Search on Drimble for '%s'",
     contexts: ["selection"],
   });
 });
