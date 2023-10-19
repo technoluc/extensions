@@ -6,10 +6,14 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-chrome.contextMenus.onClicked.addListener(function(info, tab) {
+chrome.contextMenus.onClicked.addListener(function (info, tab) {
   if (info.menuItemId === "customLink") {
     const selectedText = info.selectionText;
-    const customLink = "https://drimble.nl/postcode/" + selectedText;
+    
+    // Remove spaces from the selected text
+    const sanitizedText = selectedText.replace(/\s/g, "");
+    
+    const customLink = "https://drimble.nl/postcode/" + sanitizedText;
     chrome.tabs.create({ url: customLink });
   }
 });
