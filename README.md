@@ -14,5 +14,4 @@ Some nice shortcuts to everyday tasks
 |Search Engine|Shortcut|URL with %s (use %S for space instead of "+")|
 |:-:|:-:|:-:|
 |GitHub|gh|https://github.com/search?q=%S&type=repositories|
-|Kamer van Koophandel|kvk|https://tinyurl.com/kvkuitgebreid|
-
+|Kamer van Koophandel|kvk|https://www.kvk.nl/zoeken/handelsregister/?handelsnaam=%S&hoofdvestiging=1&rechtspersoon=1&nevenvestiging=1&zoekvervallen=1&zoekuitgeschreven=1&start=0|
